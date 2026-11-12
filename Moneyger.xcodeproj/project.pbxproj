@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0131E343AEB11C80C3FC1596 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D748A5F1A57774E015D22 /* SettingsView.swift */; };
+		019BE8F2073D6D5898AFFC2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E086C557F478A88575AED2C0 /* GoogleService-Info.plist */; };
+		023985F5778F3123374D8D6D /* ExchangeRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B622AE4832C2CB25F5A22 /* ExchangeRateService.swift */; };
+		0665930B24AAC87DD8081273 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0372E106FB8D3D9819F7C5A0 /* SettingsViewModel.swift */; };
+		0D93F54418CC8803260D6A05 /* EmailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1922565DE532F6E11F538A65 /* EmailRepository.swift */; };
+		1CBF60CEA200532C500D8D31 /* SharedInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87839D3AD9B30B33D7ADBCDA /* SharedInbox.swift */; };
+		3A0274B4970DAA5BB5C3AA33 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757082857E505293C8E42668 /* ShareViewController.swift */; };
+		41D834A241A6574C505B4C92 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B7EAE4D9204AA696DF7CF6 /* DashboardView.swift */; };
+		43F82F133F51BD48AA969096 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59B4F387F32548E7D079F3 /* Theme.swift */; };
+		4687792345AFA6C9A042784B /* SharedInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87839D3AD9B30B33D7ADBCDA /* SharedInbox.swift */; };
+		4ABD5FA5078B995FFBF90C18 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717CC76A999CC16C7AFF47D /* DashboardViewModel.swift */; };
+		4B3971DE95B7F8A672417951 /* GmailAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E26087139A1BAD13B83018 /* GmailAPIService.swift */; };
+		5E0EB8A113ED323E154AEE8A /* GmailConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6FCAEE011A0971808C6EA /* GmailConnectView.swift */; };
+		64E1E4F178668890F452118A /* SpendingChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F771979395992ED49A461 /* SpendingChartView.swift */; };
+		6FA2B4470E5AB06242EAEF65 /* EmailProcessingPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21780424F5264A78B3B9A729 /* EmailProcessingPipeline.swift */; };
+		70B0985027C3CB8D657FBF4E /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E32C6ADDFB2F1C9CEFADEDC /* AccountsViewModel.swift */; };
+		733C253DC9B28C5E2648741C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBE2A29AADED7CF03E259FF /* WelcomeView.swift */; };
+		76B9D52A92ABACDAC3B66B97 /* ExtractionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2225207789C44ECBE6284 /* ExtractionStore.swift */; };
+		79BE7460A499B802210A1B1A /* MoneygerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C9220B50A96B7ED612517 /* MoneygerApp.swift */; };
+		7A6D20CE43EFB5EB3EB89F32 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2067F46220C57ABEB900B4 /* TransactionDetailView.swift */; };
+		7E223285556E6330965F52E9 /* SwiftDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065BDB602E8A661E3D52976B /* SwiftDataStack.swift */; };
+		81E1163405E2221FBD7F13CA /* DocumentTextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6BF8E768A9E1013EFB8309 /* DocumentTextExtractor.swift */; };
+		8216E518BED6261A7D9A0FB9 /* FinancialEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680CFBCCCB123FBFF8D43B4F /* FinancialEmail.swift */; };
+		8734DED5F416840BE840B6B5 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF9F25BDD97D0D35D9D2B5 /* TransactionsListView.swift */; };
+		892543F5E2E88DC773DA5F66 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80980B15B913527370AD95 /* TransactionRepository.swift */; };
+		8CA82F3CD22E3680DF121731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61ACE322A7E3FEACC445EF53 /* Assets.xcassets */; };
+		8F50F4DCFAA7C824FABE34A4 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFF8B2FD8433D968DE2B39 /* MainTabView.swift */; };
+		94D4F88575982F1CC4A8982A /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0DAA0AF6209E8CF77D543 /* AccountsView.swift */; };
+		95A2C28C93D715CB4B894F46 /* AIProviderSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F092AECF02AE79C8D941981 /* AIProviderSettingsView.swift */; };
+		99B0FBBD57C1D85A8CE7F096 /* MoneygerShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03A8525753719A0E9804A88A /* MoneygerShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A52A0F95298F56630B099680 /* AIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08A4742291F4AA070CF7710 /* AIProvider.swift */; };
+		AA619D125EF0744588151B59 /* GeminiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD99CC4371C4A5256D0EFA /* GeminiProvider.swift */; };
+		B57187969079E5434D4B60C9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969903BD904FE17C758486E4 /* Category.swift */; };
+		BF79179296FE2CBEE01004CD /* GmailAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9A92FB58CF22C72394A717 /* GmailAuthService.swift */; };
+		BFBB5A4A924AD021C9D54596 /* DocumentImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7096CEF3E7F2E59D5A1D568E /* DocumentImporter.swift */; };
+		CF4E1D1403303C3AE4AF67BA /* DocumentImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B603EC4A2A94CF0F27F71A6 /* DocumentImportView.swift */; };
+		D0D63305BF69FCD2C206612E /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5870AEC847772A9202AA8AA /* KeychainService.swift */; };
+		D5A6BE015BE0C7DCCBB62013 /* OpenAIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28812BF40DFA1196B6DF88FF /* OpenAIProvider.swift */; };
+		D8D466AA9AD11D1B144C1EC3 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F79AAB4C27846B49B8AEB3 /* Transaction.swift */; };
+		DD4A0962A06FA1F51292C370 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129EFCB73CBC26B4F7A87797 /* ContentView.swift */; };
+		DEAC8900B68D4E55069CA7B2 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D74A488E56706F95B49E6A /* TransactionsViewModel.swift */; };
+		E8AB6F71BAEF4BCA074B1465 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 9EC8268F70EA37DF96A5DFC8 /* GoogleSignIn */; };
+		F22264DCD972140CDAF9ED14 /* ClaudeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CA3975E1D7A7DC9C3DC01C /* ClaudeProvider.swift */; };
+		F64F8506E1B22DCBFFF7B2E2 /* ProcessedEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504FCD523E83D9F04A64E9EE /* ProcessedEmail.swift */; };
+		F8093150730D1110D9EBA252 /* MoneygerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F67B1D6DF57DB4782A620E0 /* MoneygerUITests.swift */; };
+		F88C45DF49ED2E9EFE5BB4BC /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA504AA3CB3C67677528D3 /* Account.swift */; };
+		FAD6FCB6E85A46ACC224530B /* SpendingHistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAAB27C5475BDC612755B9F /* SpendingHistoryCard.swift */; };
+		FE506181146D805D1F8B1640 /* CurrencyBreakdownCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61CAF80FF9AC4CEEE3369E /* CurrencyBreakdownCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64FCC1627A5560C56E11CE1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D11F799E2B9F4037F1822374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C37458D299B38DEB7588EC4D;
+			remoteInfo = Moneyger;
+		};
+		FD5258FA886686D5227493ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D11F799E2B9F4037F1822374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2219E9DC803AFECD97BB5B2C;
+			remoteInfo = MoneygerShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6514BA87DEF1FF124EBE32BC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99B0FBBD57C1D85A8CE7F096 /* MoneygerShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02B7EAE4D9204AA696DF7CF6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		0372E106FB8D3D9819F7C5A0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		03A8525753719A0E9804A88A /* MoneygerShare.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MoneygerShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		065BDB602E8A661E3D52976B /* SwiftDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataStack.swift; sourceTree = "<group>"; };
+		0FAAB27C5475BDC612755B9F /* SpendingHistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingHistoryCard.swift; sourceTree = "<group>"; };
+		0FBE2A29AADED7CF03E259FF /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		122CACF9B8D736F5E1D32857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		129EFCB73CBC26B4F7A87797 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1922565DE532F6E11F538A65 /* EmailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRepository.swift; sourceTree = "<group>"; };
+		20D74A488E56706F95B49E6A /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		21780424F5264A78B3B9A729 /* EmailProcessingPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailProcessingPipeline.swift; sourceTree = "<group>"; };
+		2717CC76A999CC16C7AFF47D /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		28812BF40DFA1196B6DF88FF /* OpenAIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIProvider.swift; sourceTree = "<group>"; };
+		2F8A76DAE7B6381823D0E85A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4AFF9F25BDD97D0D35D9D2B5 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		4DEFF8B2FD8433D968DE2B39 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		4E32C6ADDFB2F1C9CEFADEDC /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
+		504FCD523E83D9F04A64E9EE /* ProcessedEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedEmail.swift; sourceTree = "<group>"; };
+		50CA3975E1D7A7DC9C3DC01C /* ClaudeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeProvider.swift; sourceTree = "<group>"; };
+		52D7E57F924D46E9DF03A3A0 /* MoneygerUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MoneygerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CEA504AA3CB3C67677528D3 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		61ACE322A7E3FEACC445EF53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		680CFBCCCB123FBFF8D43B4F /* FinancialEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialEmail.swift; sourceTree = "<group>"; };
+		6B603EC4A2A94CF0F27F71A6 /* DocumentImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentImportView.swift; sourceTree = "<group>"; };
+		6D61CAF80FF9AC4CEEE3369E /* CurrencyBreakdownCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBreakdownCard.swift; sourceTree = "<group>"; };
+		6F092AECF02AE79C8D941981 /* AIProviderSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIProviderSettingsView.swift; sourceTree = "<group>"; };
+		6F67B1D6DF57DB4782A620E0 /* MoneygerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneygerUITests.swift; sourceTree = "<group>"; };
+		7096CEF3E7F2E59D5A1D568E /* DocumentImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentImporter.swift; sourceTree = "<group>"; };
+		757082857E505293C8E42668 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		75E26087139A1BAD13B83018 /* GmailAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailAPIService.swift; sourceTree = "<group>"; };
+		7C9A92FB58CF22C72394A717 /* GmailAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailAuthService.swift; sourceTree = "<group>"; };
+		7E3B622AE4832C2CB25F5A22 /* ExchangeRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateService.swift; sourceTree = "<group>"; };
+		7F5521B6CA56A2F078FC62E2 /* Moneyger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Moneyger.entitlements; sourceTree = "<group>"; };
+		827D748A5F1A57774E015D22 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		841C9220B50A96B7ED612517 /* MoneygerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneygerApp.swift; sourceTree = "<group>"; };
+		85F79AAB4C27846B49B8AEB3 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		87839D3AD9B30B33D7ADBCDA /* SharedInbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedInbox.swift; sourceTree = "<group>"; };
+		8A6BF8E768A9E1013EFB8309 /* DocumentTextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTextExtractor.swift; sourceTree = "<group>"; };
+		93D6FCAEE011A0971808C6EA /* GmailConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailConnectView.swift; sourceTree = "<group>"; };
+		969903BD904FE17C758486E4 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		BD2067F46220C57ABEB900B4 /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
+		BD2E1A2C1D9A052F55BB2EE4 /* MoneygerShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoneygerShare.entitlements; sourceTree = "<group>"; };
+		BD59B4F387F32548E7D079F3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C57F771979395992ED49A461 /* SpendingChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingChartView.swift; sourceTree = "<group>"; };
+		CF80980B15B913527370AD95 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
+		D5870AEC847772A9202AA8AA /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		DECD99CC4371C4A5256D0EFA /* GeminiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiProvider.swift; sourceTree = "<group>"; };
+		E086C557F478A88575AED2C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E08A4742291F4AA070CF7710 /* AIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIProvider.swift; sourceTree = "<group>"; };
+		EBE0DAA0AF6209E8CF77D543 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		ECC2225207789C44ECBE6284 /* ExtractionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractionStore.swift; sourceTree = "<group>"; };
+		F386984DDA6256765B2F8F61 /* Moneyger.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Moneyger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D9DB029DD70A6866415F594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AB6F71BAEF4BCA074B1465 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		055B67C305CF23CE038BD6BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F386984DDA6256765B2F8F61 /* Moneyger.app */,
+				03A8525753719A0E9804A88A /* MoneygerShare.appex */,
+				52D7E57F924D46E9DF03A3A0 /* MoneygerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09916FC68271BDE564DAF740 = {
+			isa = PBXGroup;
+			children = (
+				C1B1E0353285714D59C13CBB /* Moneyger */,
+				D1031D5F79C6B63D4BAB5DF0 /* MoneygerShare */,
+				23A67E2CD198FEF99BFAEED8 /* MoneygerUITests */,
+				055B67C305CF23CE038BD6BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23A67E2CD198FEF99BFAEED8 /* MoneygerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F67B1D6DF57DB4782A620E0 /* MoneygerUITests.swift */,
+			);
+			path = MoneygerUITests;
+			sourceTree = "<group>";
+		};
+		241960E5FC08BE52CAB55D37 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B622AE4832C2CB25F5A22 /* ExchangeRateService.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		3A7CF06959EAD21CB3BF9787 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				EBE0DAA0AF6209E8CF77D543 /* AccountsView.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		3C760E2893231F66AF1BFE97 /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				21780424F5264A78B3B9A729 /* EmailProcessingPipeline.swift */,
+			);
+			path = Pipeline;
+			sourceTree = "<group>";
+		};
+		41C7D926E2160D715F2DCBBE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				93D6FCAEE011A0971808C6EA /* GmailConnectView.swift */,
+				0FBE2A29AADED7CF03E259FF /* WelcomeView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5DDF7D904284E18525F4A00F /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				E08A4742291F4AA070CF7710 /* AIProvider.swift */,
+				50CA3975E1D7A7DC9C3DC01C /* ClaudeProvider.swift */,
+				DECD99CC4371C4A5256D0EFA /* GeminiProvider.swift */,
+				D5870AEC847772A9202AA8AA /* KeychainService.swift */,
+				28812BF40DFA1196B6DF88FF /* OpenAIProvider.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		657FD4CA7DAA37DF64C34C63 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5DDF7D904284E18525F4A00F /* AI */,
+				241960E5FC08BE52CAB55D37 /* Currency */,
+				7F42764A6A1C8FA1D44C5882 /* Gmail */,
+				E23FD9786A0A4E1849CD8034 /* Import */,
+				3C760E2893231F66AF1BFE97 /* Pipeline */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7F42764A6A1C8FA1D44C5882 /* Gmail */ = {
+			isa = PBXGroup;
+			children = (
+				75E26087139A1BAD13B83018 /* GmailAPIService.swift */,
+				7C9A92FB58CF22C72394A717 /* GmailAuthService.swift */,
+			);
+			path = Gmail;
+			sourceTree = "<group>";
+		};
+		829B3FFDBB5D3576B719BC6B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4E32C6ADDFB2F1C9CEFADEDC /* AccountsViewModel.swift */,
+				2717CC76A999CC16C7AFF47D /* DashboardViewModel.swift */,
+				0372E106FB8D3D9819F7C5A0 /* SettingsViewModel.swift */,
+				20D74A488E56706F95B49E6A /* TransactionsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B344821283DE87169928E546 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6F092AECF02AE79C8D941981 /* AIProviderSettingsView.swift */,
+				827D748A5F1A57774E015D22 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B883C95DBD29C66690731BFF /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2225207789C44ECBE6284 /* ExtractionStore.swift */,
+				065BDB602E8A661E3D52976B /* SwiftDataStack.swift */,
+				DF57D930E745A3C2ECA11951 /* Repositories */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		BCF05939770059095F66EB15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5CEA504AA3CB3C67677528D3 /* Account.swift */,
+				969903BD904FE17C758486E4 /* Category.swift */,
+				680CFBCCCB123FBFF8D43B4F /* FinancialEmail.swift */,
+				504FCD523E83D9F04A64E9EE /* ProcessedEmail.swift */,
+				85F79AAB4C27846B49B8AEB3 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE328460E992EEAE9BDDF81D /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				6B603EC4A2A94CF0F27F71A6 /* DocumentImportView.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		C1B1E0353285714D59C13CBB /* Moneyger */ = {
+			isa = PBXGroup;
+			children = (
+				129EFCB73CBC26B4F7A87797 /* ContentView.swift */,
+				841C9220B50A96B7ED612517 /* MoneygerApp.swift */,
+				BCF05939770059095F66EB15 /* Models */,
+				DDD5D5175D9DDAAF9152ABE0 /* Resources */,
+				657FD4CA7DAA37DF64C34C63 /* Services */,
+				D90581F2909C6123AD136275 /* Shared */,
+				B883C95DBD29C66690731BFF /* Storage */,
+				829B3FFDBB5D3576B719BC6B /* ViewModels */,
+				C1D4529841846915B08F5F3B /* Views */,
+			);
+			path = Moneyger;
+			sourceTree = "<group>";
+		};
+		C1D4529841846915B08F5F3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DEFF8B2FD8433D968DE2B39 /* MainTabView.swift */,
+				3A7CF06959EAD21CB3BF9787 /* Accounts */,
+				D066A7D4E934AB991D04F7B2 /* Dashboard */,
+				BE328460E992EEAE9BDDF81D /* Import */,
+				41C7D926E2160D715F2DCBBE /* Onboarding */,
+				B344821283DE87169928E546 /* Settings */,
+				E9518F167F4EE0382328FBF8 /* Shared */,
+				E19D360F51E22781749A5154 /* Transactions */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D066A7D4E934AB991D04F7B2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				6D61CAF80FF9AC4CEEE3369E /* CurrencyBreakdownCard.swift */,
+				02B7EAE4D9204AA696DF7CF6 /* DashboardView.swift */,
+				C57F771979395992ED49A461 /* SpendingChartView.swift */,
+				0FAAB27C5475BDC612755B9F /* SpendingHistoryCard.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		D1031D5F79C6B63D4BAB5DF0 /* MoneygerShare */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A76DAE7B6381823D0E85A /* Info.plist */,
+				BD2E1A2C1D9A052F55BB2EE4 /* MoneygerShare.entitlements */,
+				757082857E505293C8E42668 /* ShareViewController.swift */,
+			);
+			path = MoneygerShare;
+			sourceTree = "<group>";
+		};
+		D90581F2909C6123AD136275 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				87839D3AD9B30B33D7ADBCDA /* SharedInbox.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DDD5D5175D9DDAAF9152ABE0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61ACE322A7E3FEACC445EF53 /* Assets.xcassets */,
+				E086C557F478A88575AED2C0 /* GoogleService-Info.plist */,
+				122CACF9B8D736F5E1D32857 /* Info.plist */,
+				7F5521B6CA56A2F078FC62E2 /* Moneyger.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF57D930E745A3C2ECA11951 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				1922565DE532F6E11F538A65 /* EmailRepository.swift */,
+				CF80980B15B913527370AD95 /* TransactionRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E19D360F51E22781749A5154 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				BD2067F46220C57ABEB900B4 /* TransactionDetailView.swift */,
+				4AFF9F25BDD97D0D35D9D2B5 /* TransactionsListView.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		E23FD9786A0A4E1849CD8034 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				7096CEF3E7F2E59D5A1D568E /* DocumentImporter.swift */,
+				8A6BF8E768A9E1013EFB8309 /* DocumentTextExtractor.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		E9518F167F4EE0382328FBF8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BD59B4F387F32548E7D079F3 /* Theme.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B899AE36E7D5F6D7BB4AF4A /* MoneygerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF9081929A46C04FE2F2039F /* Build configuration list for PBXNativeTarget "MoneygerUITests" */;
+			buildPhases = (
+				93A1874374E68002167B88B0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2FF1AD5F648EBCAD4980248 /* PBXTargetDependency */,
+			);
+			name = MoneygerUITests;
+			packageProductDependencies = (
+			);
+			productName = MoneygerUITests;
+			productReference = 52D7E57F924D46E9DF03A3A0 /* MoneygerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2219E9DC803AFECD97BB5B2C /* MoneygerShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21E80CB615E48EDFAB2F2F46 /* Build configuration list for PBXNativeTarget "MoneygerShare" */;
+			buildPhases = (
+				47515A8E062F5DDF486723DF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneygerShare;
+			packageProductDependencies = (
+			);
+			productName = MoneygerShare;
+			productReference = 03A8525753719A0E9804A88A /* MoneygerShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C37458D299B38DEB7588EC4D /* Moneyger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19A7730E533A0E4C4BD2CBC /* Build configuration list for PBXNativeTarget "Moneyger" */;
+			buildPhases = (
+				89589F8AE8A752330D61E5C4 /* Sources */,
+				5D224D0542F6A9260A1FA545 /* Resources */,
+				8D9DB029DD70A6866415F594 /* Frameworks */,
+				6514BA87DEF1FF124EBE32BC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD5F519C1ACBCF402A245E40 /* PBXTargetDependency */,
+			);
+			name = Moneyger;
+			packageProductDependencies = (
+				9EC8268F70EA37DF96A5DFC8 /* GoogleSignIn */,
+			);
+			productName = Moneyger;
+			productReference = F386984DDA6256765B2F8F61 /* Moneyger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D11F799E2B9F4037F1822374 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1B899AE36E7D5F6D7BB4AF4A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = C37458D299B38DEB7588EC4D;
+					};
+					2219E9DC803AFECD97BB5B2C = {
+						DevelopmentTeam = 673GW6BN2P;
+						ProvisioningStyle = Automatic;
+					};
+					C37458D299B38DEB7588EC4D = {
+						DevelopmentTeam = 673GW6BN2P;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 75DFDA8F1987E9F05BA45B9E /* Build configuration list for PBXProject "Moneyger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 09916FC68271BDE564DAF740;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F408EB0D48E3EADE4FA556B0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C37458D299B38DEB7588EC4D /* Moneyger */,
+				2219E9DC803AFECD97BB5B2C /* MoneygerShare */,
+				1B899AE36E7D5F6D7BB4AF4A /* MoneygerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D224D0542F6A9260A1FA545 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA82F3CD22E3680DF121731 /* Assets.xcassets in Resources */,
+				019BE8F2073D6D5898AFFC2A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47515A8E062F5DDF486723DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0274B4970DAA5BB5C3AA33 /* ShareViewController.swift in Sources */,
+				1CBF60CEA200532C500D8D31 /* SharedInbox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89589F8AE8A752330D61E5C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52A0F95298F56630B099680 /* AIProvider.swift in Sources */,
+				95A2C28C93D715CB4B894F46 /* AIProviderSettingsView.swift in Sources */,
+				F88C45DF49ED2E9EFE5BB4BC /* Account.swift in Sources */,
+				94D4F88575982F1CC4A8982A /* AccountsView.swift in Sources */,
+				70B0985027C3CB8D657FBF4E /* AccountsViewModel.swift in Sources */,
+				B57187969079E5434D4B60C9 /* Category.swift in Sources */,
+				F22264DCD972140CDAF9ED14 /* ClaudeProvider.swift in Sources */,
+				DD4A0962A06FA1F51292C370 /* ContentView.swift in Sources */,
+				FE506181146D805D1F8B1640 /* CurrencyBreakdownCard.swift in Sources */,
+				41D834A241A6574C505B4C92 /* DashboardView.swift in Sources */,
+				4ABD5FA5078B995FFBF90C18 /* DashboardViewModel.swift in Sources */,
+				CF4E1D1403303C3AE4AF67BA /* DocumentImportView.swift in Sources */,
+				BFBB5A4A924AD021C9D54596 /* DocumentImporter.swift in Sources */,
+				81E1163405E2221FBD7F13CA /* DocumentTextExtractor.swift in Sources */,
+				6FA2B4470E5AB06242EAEF65 /* EmailProcessingPipeline.swift in Sources */,
+				0D93F54418CC8803260D6A05 /* EmailRepository.swift in Sources */,
+				023985F5778F3123374D8D6D /* ExchangeRateService.swift in Sources */,
+				76B9D52A92ABACDAC3B66B97 /* ExtractionStore.swift in Sources */,
+				8216E518BED6261A7D9A0FB9 /* FinancialEmail.swift in Sources */,
+				AA619D125EF0744588151B59 /* GeminiProvider.swift in Sources */,
+				4B3971DE95B7F8A672417951 /* GmailAPIService.swift in Sources */,
+				BF79179296FE2CBEE01004CD /* GmailAuthService.swift in Sources */,
+				5E0EB8A113ED323E154AEE8A /* GmailConnectView.swift in Sources */,
+				D0D63305BF69FCD2C206612E /* KeychainService.swift in Sources */,
+				8F50F4DCFAA7C824FABE34A4 /* MainTabView.swift in Sources */,
+				79BE7460A499B802210A1B1A /* MoneygerApp.swift in Sources */,
+				D5A6BE015BE0C7DCCBB62013 /* OpenAIProvider.swift in Sources */,
+				F64F8506E1B22DCBFFF7B2E2 /* ProcessedEmail.swift in Sources */,
+				0131E343AEB11C80C3FC1596 /* SettingsView.swift in Sources */,
+				0665930B24AAC87DD8081273 /* SettingsViewModel.swift in Sources */,
+				4687792345AFA6C9A042784B /* SharedInbox.swift in Sources */,
+				64E1E4F178668890F452118A /* SpendingChartView.swift in Sources */,
+				FAD6FCB6E85A46ACC224530B /* SpendingHistoryCard.swift in Sources */,
+				7E223285556E6330965F52E9 /* SwiftDataStack.swift in Sources */,
+				43F82F133F51BD48AA969096 /* Theme.swift in Sources */,
+				D8D466AA9AD11D1B144C1EC3 /* Transaction.swift in Sources */,
+				7A6D20CE43EFB5EB3EB89F32 /* TransactionDetailView.swift in Sources */,
+				892543F5E2E88DC773DA5F66 /* TransactionRepository.swift in Sources */,
+				8734DED5F416840BE840B6B5 /* TransactionsListView.swift in Sources */,
+				DEAC8900B68D4E55069CA7B2 /* TransactionsViewModel.swift in Sources */,
+				733C253DC9B28C5E2648741C /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A1874374E68002167B88B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8093150730D1110D9EBA252 /* MoneygerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD5F519C1ACBCF402A245E40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2219E9DC803AFECD97BB5B2C /* MoneygerShare */;
+			targetProxy = FD5258FA886686D5227493ED /* PBXContainerItemProxy */;
+		};
+		F2FF1AD5F648EBCAD4980248 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C37458D299B38DEB7588EC4D /* Moneyger */;
+			targetProxy = 64FCC1627A5560C56E11CE1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		285ACE06AAC8DFFECAEDAE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneyger.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moneyger;
+			};
+			name = Release;
+		};
+		422389C42D47997AA789219D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		432FD34DCC7677530D8D8794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MoneygerShare/MoneygerShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 673GW6BN2P;
+				INFOPLIST_FILE = MoneygerShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneyger.app.share;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AE6D5C3B4B4554CF37C6FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MoneygerShare/MoneygerShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 673GW6BN2P;
+				INFOPLIST_FILE = MoneygerShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneyger.app.share;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		564A7B7F74126FD512972B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		97DFC282C3C4393B2D0FF681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneyger.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moneyger;
+			};
+			name = Debug;
+		};
+		E7C2DB3DC733E59CE5CF7FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Moneyger/Resources/Moneyger.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 673GW6BN2P;
+				INFOPLIST_FILE = Moneyger/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneyger.app;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F39FAEE40223603232DFCF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Moneyger/Resources/Moneyger.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 673GW6BN2P;
+				INFOPLIST_FILE = Moneyger/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneyger.app;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21E80CB615E48EDFAB2F2F46 /* Build configuration list for PBXNativeTarget "MoneygerShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE6D5C3B4B4554CF37C6FA6 /* Debug */,
+				432FD34DCC7677530D8D8794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		75DFDA8F1987E9F05BA45B9E /* Build configuration list for PBXProject "Moneyger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564A7B7F74126FD512972B80 /* Debug */,
+				422389C42D47997AA789219D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D19A7730E533A0E4C4BD2CBC /* Build configuration list for PBXNativeTarget "Moneyger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7C2DB3DC733E59CE5CF7FE7 /* Debug */,
+				F39FAEE40223603232DFCF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FF9081929A46C04FE2F2039F /* Build configuration list for PBXNativeTarget "MoneygerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97DFC282C3C4393B2D0FF681 /* Debug */,
+				285ACE06AAC8DFFECAEDAE80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F408EB0D48E3EADE4FA556B0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9EC8268F70EA37DF96A5DFC8 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F408EB0D48E3EADE4FA556B0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D11F799E2B9F4037F1822374 /* Project object */;
+}
